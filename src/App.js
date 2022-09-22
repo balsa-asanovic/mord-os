@@ -3,6 +3,7 @@ import './App.css';
 import Authentication from './components/Authentication/Authentication';
 import useAuth from "./hooks/useAuth";
 import { validCredentials } from './constants/validCredentials';
+import Desktop from './components/Desktop/Desktop';
 
 function App() {
   const { authenticated, setAuthenticated } = useAuth();
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="App">
       {authenticated ? 
-        <div>Hello World </div>
+        <Desktop />
         :
         <Authentication />  
     }
