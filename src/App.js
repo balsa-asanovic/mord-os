@@ -1,9 +1,16 @@
+import { useLayoutEffect } from 'react';
 import './App.css';
 import Authentication from './components/Authentication/Authentication';
 import useAuth from "./hooks/useAuth";
+import { validCredentials } from './constants/validCredentials';
 
 function App() {
-  const { authenticated } = useAuth();
+  const { authenticated, setAuthenticated } = useAuth();
+
+  useLayoutEffect(() => {
+    const credentials = JSON.parse(localStorage.getItem('userCredentials'));
+    credentials?.email === validCredentials.email && credentials?.password === validCredentials.password && setAuthenticated(true);
+  }, [])
 
   return (
     <div className="App">

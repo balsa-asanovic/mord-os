@@ -29,6 +29,7 @@
     border-color: red;
     color: white;
     padding-left: 20px;
+    outline:none;
 }
 
 .auth-button {
