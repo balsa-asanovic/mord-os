@@ -31,3 +31,19 @@
     font-weight: bold;
     font-family: Papyrus;
 }
+
+.taskbar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #240b36;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    margin-left: 5px;
+    color: red;
+    border-style: none;
+}
+
+.taskbar-dropdown:hover .taskbar-dropdown-content {
+    display: block;
+}

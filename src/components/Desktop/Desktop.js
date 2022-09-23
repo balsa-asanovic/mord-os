@@ -1,14 +1,16 @@
 import './desktop.css';
 import Taskbar from '../Taskbar/Taskbar';
 import Icon from '../Icon/Icon';
-import Draggable from 'react-draggable';
+import { defaultIcons } from '../../constants/defaultIcons';
 
 const Desktop = () => {
 
     return (
         <div className="desktop-main">
             <Taskbar />
-            <Icon />
+            {defaultIcons.map((item) =>
+                <Icon key={item.id} title={item.title} picture={item.picture} />
+            )}
 
         </div>
     )
