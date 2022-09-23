@@ -1,8 +1,7 @@
 .desktop-main {
-    background-image: url("../../assets/images/theEye.jpg");
+    background-image: url("../../assets/images/sauron.jpg");
     background-size: 100% 100%;
     min-height: 100vh;
     display: flex;
     width: 100%;
-    color: red;
 }

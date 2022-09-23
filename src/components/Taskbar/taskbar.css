@@ -1,6 +1,33 @@
 .taskbar-main {
-    border-style: solid;
     width: 100%;
-    height: 40px;
-    margin-top: auto;
+    height: 30px;
+    padding-top: 2px;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    //margin-top: auto;
+}
+
+.taskbar-title {
+    font-family: Papyrus;
+    padding-left: 15px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.taskbar-date {
+    float: right;
+    padding-right: 15px;
+    color: #240b36;
+    font-weight: bold;
+    font-family: Papyrus;
+}
+
+.taskbar-time {
+    float: right;
+    padding-right: 15px;
+    color: #240b36;
+    font-weight: bold;
+    font-family: Papyrus;
 }
