@@ -1,11 +1,11 @@
 import "./icon.css";
 import Draggable from 'react-draggable';
 
-const Icon = ({ title, picture }) => {
+const Icon = ({ title, picture, doubleClick }) => {
 
     return (
         <Draggable>
-            <div className="icon-main" onDoubleClick={() => console.log("icon click")}>
+            <div className="icon-main" onDoubleClick={() => doubleClick({ title })}>
                 <div style={{backgroundImage: "url(" + picture + ")"}} className="icon-pic"></div>
                 <div className="icon-text">{title}</div>
             </div>

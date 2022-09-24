@@ -1,4 +1,41 @@
 .window-main {
     border-style: solid;
+    border-width: 4px;
+    //background-color: yellow;
+    border-color: #240b36;
+    width: 400px;
+    height: 450px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    resize: both;
+    overflow: auto;
+}
+
+
+.window-header {
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432);
+    padding: 3px;
+    color: red;
+    cursor: default;
+}
+
+.window-close {
+    float: right;
+    color: #240b36;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.window-body {
+
+}
+
+.window-footer {
     
 }
