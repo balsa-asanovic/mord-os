@@ -5,7 +5,7 @@ const Icon = ({ title, picture }) => {
 
     return (
         <Draggable>
-            <div className="icon-main">
+            <div className="icon-main" onDoubleClick={() => console.log("icon click")}>
                 <div style={{backgroundImage: "url(" + picture + ")"}} className="icon-pic"></div>
                 <div className="icon-text">{title}</div>
             </div>
