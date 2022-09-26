@@ -11,3 +11,6 @@
     cursor: pointer;
 }
 
+.files-context-menu {
+    position: absolute;
+}

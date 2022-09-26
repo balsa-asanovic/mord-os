@@ -40,8 +40,12 @@ export const FileProvider = ({ children }) => {
         setAscDesc(prev => prev * -1);
     };
 
+    const deleteFile = (fileName) => {
+        setFiles(files.filter((file) => file.fileName !== fileName));
+    };
+
     return (
-        <FileContext.Provider value={{ files, setFiles, saveFile, orderBy }}>{children}</FileContext.Provider>
+        <FileContext.Provider value={{ files, setFiles, saveFile, orderBy, deleteFile }}>{children}</FileContext.Provider>
     )
 };
 
