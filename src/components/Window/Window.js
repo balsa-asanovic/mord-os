@@ -3,6 +3,7 @@ import Draggable from 'react-draggable';
 import Notepad from '../Applications/Notepad/Notepad';
 import Files from "../Applications/Files/Files";
 import Browser from "../Applications/Browser/Browser";
+import RssFeed from "../Applications/RssFeed/RssFeed";
 
 const Window = ({ id, title, closeWindow, addWindow, zIndex, top, left, onWindowClick, textContent, fileName }) => {
 
@@ -13,7 +14,7 @@ const Window = ({ id, title, closeWindow, addWindow, zIndex, top, left, onWindow
             case 'Gallery':
                 return '';
             case 'Rss Feed':
-                return '';
+                return <RssFeed />;
             case 'Camera':
                 return '';
             case 'Notepad':

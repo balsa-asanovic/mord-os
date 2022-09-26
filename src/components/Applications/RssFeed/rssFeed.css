@@ -1,0 +1,24 @@
+.rssFeed-main {
+    height: 100%;
+    overflow: auto;
+}
+
+.rssFeed-card {
+    border: solid 1px #240b36;
+    margin: 15px;
+    margin-bottom: 40px;
+    padding: 10px;
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432);
+    font-family: Consolas;
+    color: yellow;
+}
+
+.rssFeed-title {
+    font-size: 20px;
+}
+
+.rssFeed-card:hover {
+    box-shadow: 5px 5px 5px 2px red;
+    transform: scale(1.01);
+}
