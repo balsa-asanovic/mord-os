@@ -42,7 +42,8 @@
 }
 
 .window-body {
-    height: 93%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .window-footer {

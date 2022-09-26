@@ -1,0 +1,28 @@
+.browser-main {
+    height: 100%;
+    width: 100%;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.browser-main iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.browser-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.browser-main input {
+    margin: 10px;
+    width: 90%;
+    outline: none;
+}
+
+.browser-main button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}

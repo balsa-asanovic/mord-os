@@ -2,13 +2,14 @@ import "./window.css";
 import Draggable from 'react-draggable';
 import Notepad from '../Applications/Notepad/Notepad';
 import Files from "../Applications/Files/Files";
+import Browser from "../Applications/Browser/Browser";
 
 const Window = ({ id, title, closeWindow, addWindow, zIndex, top, left, onWindowClick, textContent, fileName }) => {
 
     const getApp = () => {
         switch (title) {
             case 'Browser':
-                return '';
+                return <Browser />;
             case 'Gallery':
                 return '';
             case 'Rss Feed':
