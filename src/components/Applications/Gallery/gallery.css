@@ -1,0 +1,25 @@
+.gallery-main {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px;
+}
+
+.gallery-card {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.gallery-pic-title {
+    width: 200px;
+    overflow: auto;
+}

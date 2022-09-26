@@ -4,6 +4,7 @@ import Notepad from '../Applications/Notepad/Notepad';
 import Files from "../Applications/Files/Files";
 import Browser from "../Applications/Browser/Browser";
 import RssFeed from "../Applications/RssFeed/RssFeed";
+import Gallery from "../Applications/Gallery/Gallery";
 
 const Window = ({ id, title, closeWindow, addWindow, zIndex, top, left, onWindowClick, textContent, fileName }) => {
 
@@ -12,7 +13,7 @@ const Window = ({ id, title, closeWindow, addWindow, zIndex, top, left, onWindow
             case 'Browser':
                 return <Browser />;
             case 'Gallery':
-                return '';
+                return <Gallery />;
             case 'Rss Feed':
                 return <RssFeed />;
             case 'Camera':
