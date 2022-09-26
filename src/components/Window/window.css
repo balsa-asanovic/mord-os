@@ -13,6 +13,8 @@
     resize: both;
     overflow: auto;
     background-color: #0fbb9f;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -24,6 +26,8 @@
     color: red;
     cursor: default;
     height: 25px;
+    font-family: Papyrus;
+    font-weight: bold;
 }
 
 .window-close {
@@ -31,10 +35,14 @@
     color: #240b36;
     font-weight: bold;
     margin-right: 5px;
+    width: 20px;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
 }
 
 .window-body {
-    
+    height: 93%;
 }
 
 .window-footer {

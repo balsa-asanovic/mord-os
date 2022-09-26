@@ -1,0 +1,13 @@
+.table-files {
+    width: 100%;
+    //border-collapse: collapse;
+}
+
+.table-files td, th {
+    border-bottom: 1px solid;
+    padding: 5px;
+    font-family: Consolas;
+    text-align: center;
+    cursor: default;
+}
+

@@ -14,7 +14,7 @@ const Desktop = () => {
 
     const addWindow = (window) => {
         setNumberOfWindows(prev => prev + 1);
-        setWindowsList(prev => [...prev, { ...window, id: numberOfWindows, top: windowPosition.top + "%", left: windowPosition.left + "%" }]);
+        setWindowsList(prev => [...prev, { ...window, id: numberOfWindows, zIndex: zIndex, top: windowPosition.top + "%", left: windowPosition.left + "%" }]);
         const newPosition = { top: windowPosition.top + 4, left: windowPosition.left + 4 };
         if (numberOfWindows % 4 === 1 && numberOfWindows > 1) {
             newPosition.top = 10;
@@ -25,11 +25,10 @@ const Desktop = () => {
 
     const closeWindow = (id) => {
         setWindowsList(prev => prev.filter((item) => item.id !== id));
-        setNumberOfWindows(prev => prev - 1);
+        // setNumberOfWindows(prev => prev - 1);
     };
 
     const onWindowClick = (id) => {
-        console.log("window click");
         setZIndex(prev => prev + 1);
         setWindowsList(prev => prev.map((item) =>
             item.id === id ? { ...item, zIndex: zIndex } : item
@@ -43,7 +42,7 @@ const Desktop = () => {
                 <Icon key={item.id} title={item.title} picture={item.picture} doubleClick={addWindow} />
             )}
             {windowsList.map((item) =>
-                <Window key={item.id} id={item.id} title={item.title} closeWindow={closeWindow} top={item.top} left={item.left} zIndex={item.zIndex} onWindowClick={onWindowClick} />
+                <Window key={item.id} id={item.id} title={item.title} addWindow={addWindow} closeWindow={closeWindow} top={item.top} left={item.left} zIndex={item.zIndex} onWindowClick={onWindowClick} textContent={item?.textContent} />
             )}
         </div>
     )
