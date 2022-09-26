@@ -1,7 +1,10 @@
+# Demo 
+[MordOS - One OS to rule them all](https://eclectic-elf-55163d.netlify.app/)
+
 # How to run
 `git clone` the project locally  
-`yarn install` to install all the dependencies  
-`yarn start` to run the project in your browser
+`npm install` to install all the dependencies  
+`npm start` to run the project in your browser
 
 
 # Project overview
