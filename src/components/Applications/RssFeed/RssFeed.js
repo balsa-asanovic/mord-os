@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./rssFeed.css";
 
 const RssFeed = () => {
-    const [feed, setFeed] = useState([{name: "test"}]);
+    const [feed, setFeed] = useState([]);
 
     useEffect(() => {
         const getFeedData = () => {

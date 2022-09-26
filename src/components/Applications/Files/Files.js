@@ -16,7 +16,7 @@ const Files = ({ openNotepad }) => {
                 <thead>
                     <tr>
                         <th onClick={() => orderBy("name")}>File Name <FaSort /></th>
-                        <th onClick={() => orderBy("date")}>Date Created <FaSort /></th>
+                        <th onClick={() => orderBy("date")}>Date Modified <FaSort /></th>
                         <th></th>
                     </tr>
                 </thead>

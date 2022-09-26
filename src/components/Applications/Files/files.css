@@ -1,6 +1,5 @@
 .table-files {
     width: 100%;
-    //border-collapse: collapse;
 }
 
 .table-files td, th {
@@ -11,6 +10,7 @@
     cursor: pointer;
 }
 
-.files-context-menu {
-    position: absolute;
+.files-main {
+    overflow: auto;
+    height: 100%;
 }
