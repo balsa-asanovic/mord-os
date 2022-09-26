@@ -3,14 +3,14 @@ import Taskbar from '../Taskbar/Taskbar';
 import Icon from '../Icon/Icon';
 import { defaultIcons } from '../../constants/defaultIcons';
 import Window from '../Window/Window';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 const Desktop = () => {
     const [windowsList, setWindowsList] = useState([]);
     const [numberOfWindows, setNumberOfWindows] = useState(0);
     const [zIndex, setZIndex] = useState(1);
-    // const [windowPosition, setWindowPosition] = useState(10);
     const [windowPosition, setWindowPosition] = useState({ top: 10, left: 10 });
+    const desktopRef = useRef(null);
 
     const addWindow = (window) => {
         setNumberOfWindows(prev => prev + 1);
@@ -19,6 +19,9 @@ const Desktop = () => {
         if (numberOfWindows % 4 === 1 && numberOfWindows > 1) {
             newPosition.top = 10;
             newPosition.left += 1;
+        } else if (numberOfWindows % 10 === 0 && numberOfWindows > 1) {
+            newPosition.top = 12;
+            newPosition.left = 12;
         }
         setWindowPosition(newPosition);
     };
@@ -36,7 +39,7 @@ const Desktop = () => {
     };
 
     return (
-        <div className="desktop-main">
+        <div ref={desktopRef} className="desktop-main">
             <Taskbar />
             {defaultIcons.map((item) =>
                 <Icon key={item.id} title={item.title} picture={item.picture} doubleClick={addWindow} />
