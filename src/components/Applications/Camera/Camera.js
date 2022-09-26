@@ -11,16 +11,16 @@ const Camera = () => {
                     videoRef.current.srcObject = stream;
                 })
                 .catch(function (error) {
-                    console.log(error);
+                    alert(error);
                 });
         };
 
         getStream();
-    });
+    }, []);
 
     return (
         <div className="camera-main">
-            <video ref={videoRef} autoPlay={true} />
+            <video ref={videoRef} autoPlay={true} className="camera-stream">Your browser does not support video.</video>
         </div>
     )
 };

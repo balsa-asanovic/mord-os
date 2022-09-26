@@ -1,0 +1,11 @@
+.camera-main {
+    height: 100%;
+    color: red;
+}
+
+.camera-stream {
+    height: 100%;
+    width: 100%;
+    color: red;
+    background-color: black;
+}
