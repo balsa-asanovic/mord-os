@@ -42,7 +42,19 @@ const Desktop = () => {
                 <Icon key={item.id} title={item.title} picture={item.picture} doubleClick={addWindow} />
             )}
             {windowsList.map((item) =>
-                <Window key={item.id} id={item.id} title={item.title} addWindow={addWindow} closeWindow={closeWindow} top={item.top} left={item.left} zIndex={item.zIndex} onWindowClick={onWindowClick} textContent={item?.textContent} />
+                <Window 
+                    key={item.id} 
+                    id={item.id} 
+                    title={item.title} 
+                    addWindow={addWindow} 
+                    closeWindow={closeWindow} 
+                    top={item.top} 
+                    left={item.left} 
+                    zIndex={item.zIndex} 
+                    onWindowClick={onWindowClick} 
+                    textContent={item?.textContent} 
+                    fileName={item?.fileName} 
+                />
             )}
         </div>
     )

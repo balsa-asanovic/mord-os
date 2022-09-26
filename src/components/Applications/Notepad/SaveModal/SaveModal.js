@@ -2,24 +2,36 @@ import "./saveModal.css"
 import FileContext from "../../../../context/FileProvider";
 import { useContext, useEffect, useRef, useState } from 'react';
 
-const SaveModal = ({ text, setText, setShowModal }) => {
-    const { saveFile } = useContext(FileContext);
-    const [fileName, setFileName] = useState("");
+const SaveModal = ({ text, setText, setShowModal, fileTitle, setFileTitle }) => {
+    const { files, saveFile } = useContext(FileContext);
+    const [fileName, setFileName] = useState(fileTitle || "");
     const [error, setError] = useState("");
     const inputRef = useRef(null);
+    const [showOverwrite, setShowOverWrite] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(fileName.length === 0) {
+        if (fileName.length === 0) {
             setError("Please enter a title");
             return;
         } else {
-            saveFile(fileName, text);
-            setFileName("");
-            setError("");
-            setText("");
-            setShowModal(false);
+            if (files.filter((file) => file.fileName === fileName).length > 0) {
+                // file exist, check overwrite
+                setShowOverWrite(true);
+            } else {
+                confirmSave();
+            }
         }
+    };
+
+    const confirmSave = () => {
+        saveFile(fileName, text);
+        setFileName("");
+        setError("");
+        setText("");
+        setShowModal(false);
+        setFileTitle("");
+        setShowOverWrite(false);
     };
 
     const handleChange = (e) => {
@@ -41,6 +53,14 @@ const SaveModal = ({ text, setText, setShowModal }) => {
                     <button type="submit" className="notepad-save-button">Save</button>
                     <button className="notepad-cancel-button" onClick={() => setShowModal(false)}>Cancel</button>
                 </div>
+                {showOverwrite &&
+                    <div className="notepad-modal-overwrite">
+                        File already exists? <br />
+                        Overwrite? <br />
+                        <button onClick={confirmSave}>Yes</button>
+                        <button onClick={() => setShowOverWrite(false)}>No</button>
+                    </div>
+                }
             </form>
         </div>
     )

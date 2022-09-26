@@ -3,7 +3,7 @@ import Draggable from 'react-draggable';
 import Notepad from '../Applications/Notepad/Notepad';
 import Files from "../Applications/Files/Files";
 
-const Window = ({ id, title, closeWindow, addWindow, zIndex, top, left, onWindowClick, textContent }) => {
+const Window = ({ id, title, closeWindow, addWindow, zIndex, top, left, onWindowClick, textContent, fileName }) => {
 
     const getApp = () => {
         switch (title) {
@@ -16,7 +16,7 @@ const Window = ({ id, title, closeWindow, addWindow, zIndex, top, left, onWindow
             case 'Camera':
                 return '';
             case 'Notepad':
-                return <Notepad textContent={textContent} />;
+                return <Notepad textContent={textContent} fileName={fileName} />;
             case 'Files':
                 return <Files openNotepad={addWindow} />;
             default:
