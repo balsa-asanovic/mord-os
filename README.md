@@ -1,6 +1,9 @@
 # Demo 
 [MordOS - One OS to rule them all](https://eclectic-elf-55163d.netlify.app/)
 
+username: borgoth@mordos.com  
+password: 12bindthem
+
 # How to run
 `git clone` the project locally  
 `npm install` to install all the dependencies  
