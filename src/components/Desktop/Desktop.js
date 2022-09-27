@@ -11,6 +11,7 @@ const Desktop = () => {
     const [zIndex, setZIndex] = useState(1);
     const [windowPosition, setWindowPosition] = useState({ top: 10, left: 10 });
     const desktopRef = useRef(null);
+    const [highLightedIcon, setHighLightedIcon] = useState("");
 
     const addWindow = (window) => {
         setNumberOfWindows(prev => prev + 1);
@@ -38,11 +39,18 @@ const Desktop = () => {
         ));
     };
 
+    const iconClick = (event) => {
+        event.target.className.includes("icon") ?
+            setHighLightedIcon(event.target.textContent || event.target.nextSibling?.textContent)
+            :
+            setHighLightedIcon("");
+    };
+
     return (
-        <div ref={desktopRef} className="desktop-main">
+        <div ref={desktopRef} className="desktop-main" onClick={(e) => iconClick(e)}>
             <Taskbar />
             {defaultIcons.map((item) =>
-                <Icon key={item.id} title={item.title} picture={item.picture} doubleClick={addWindow} />
+                <Icon key={item.id} title={item.title} picture={item.picture} doubleClick={addWindow} highLighted={highLightedIcon} />
             )}
             {windowsList.map((item) =>
                 <Window 

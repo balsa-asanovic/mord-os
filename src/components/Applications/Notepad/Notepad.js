@@ -9,8 +9,8 @@ const Notepad = ({ textContent, fileName }) => {
 
     return (
         <div className="notepad-main">
-            <button className="notepad-button" onClick={(e) => setShowModal(true)}>Save</button>
             <textarea className="notepad-textarea" placeholder="Type something..." onChange={(e) => setText(e.target.value)} value={text} />
+            <button className="notepad-button" onClick={(e) => setShowModal(true)}>Save</button>
             {showModal && <SaveModal text={text} setText={setText} fileTitle={fileTitle} setFileTitle={setFileTitle} setShowModal={setShowModal} />}
         </div>
     )

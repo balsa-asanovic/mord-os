@@ -8,10 +8,11 @@
     margin: 15px;
     margin-bottom: 40px;
     padding: 10px;
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #240b36, #c31432);
+    //background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    //background: linear-gradient(to right, #240b36, #c31432);
+    background: #154360;
     font-family: Consolas;
-    color: yellow;
+    color: #db9b1c;
 }
 
 .rssFeed-title {

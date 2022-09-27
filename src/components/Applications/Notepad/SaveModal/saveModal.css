@@ -6,10 +6,9 @@
     width: 200px;
     height: 150px;
     text-align: center;
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #240b36, #c31432);
     font-family: Papyrus;
-    color: red;
+    color: #db9b1c;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     cursor: default;
 }
 
@@ -36,7 +35,7 @@
     text-align: center;
     font-weight: bold;
     font-family: Papyrus;
-    color: red;
+    color: #db9b1c;
     margin-right: 30px;
 }
 
@@ -45,11 +44,11 @@
 }
 
 .notepad-save-button:hover {
-    color: blue;
+    color: red;
 }
 
 .notepad-cancel-button:hover {
-    color: blue;
+    color: red;
 }
 
 .notepad-modal-error {
@@ -64,12 +63,9 @@
     top: 5%;
     left: 10%;
     text-align: center;
-    background-color: black;
     padding: 5px;
     width: 150px;
     height: 130px;
-    //background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-    //background: linear-gradient(to right, #240b36, #c31432);
     background-color: #240b36;
     cursor: default;
 }
@@ -84,11 +80,11 @@
     text-align: center;
     font-weight: bold;
     font-family: Papyrus;
-    color: red;
+    color: #db9b1c;
     margin-top: 30px;
     margin-right: 20px;
 }
 
 .notepad-modal-overwrite button:hover {
-    color: blue;
+    color: red;
 }

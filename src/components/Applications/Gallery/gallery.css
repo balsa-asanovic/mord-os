@@ -22,4 +22,6 @@
 .gallery-pic-title {
     width: 200px;
     overflow: auto;
+    color: #db9b1c;
+    font-family: Consolas;
 }

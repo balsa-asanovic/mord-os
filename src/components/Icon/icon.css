@@ -25,7 +25,8 @@
 }
 
 .icon-text {
-    color: red;
+    //color: red;
+    color:  #db9b1c;
     padding-top: 5px;
     font-family: Papyrus;
 }

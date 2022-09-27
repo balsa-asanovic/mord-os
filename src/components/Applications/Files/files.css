@@ -3,11 +3,12 @@
 }
 
 .table-files td, th {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid black;
     padding: 5px;
     font-family: Consolas;
     text-align: center;
     cursor: pointer;
+    color: #db9b1c;
 }
 
 .files-main {
