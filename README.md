@@ -21,7 +21,7 @@ password: 12bindthem
 
 # Screenshots
 
-[![Desktop-Authentication1.png]([https://postimg.cc/Q9jL6h0L](https://i.postimg.cc/762xZLzL/1.png))]
+[![Desktop-Authentication1.png](https://i.postimg.cc/762xZLzL/1.png)]
 
 [(https://i.postimg.cc/MKxWzqpW/2.png)]
 
