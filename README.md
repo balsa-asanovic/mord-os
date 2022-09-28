@@ -20,5 +20,5 @@ password: 12bindthem
 #### Deadline: 7 days
 
 # Screenshots
-![1.png](https://i.postimg.cc/762xZLzL/1.png)
+[![1.png](https://i.postimg.cc/nL299sRs/1.png)](https://postimg.cc/VSSk3Nc1)
 
