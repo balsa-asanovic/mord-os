@@ -15,3 +15,7 @@
     overflow: auto;
     height: 100%;
 }
+
+.table-files tbody tr:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
