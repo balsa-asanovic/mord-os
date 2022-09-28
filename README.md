@@ -1,15 +1,18 @@
-# Demo 
+# MordOS
+
+
+## Demo 
 [MordOS - One OS to rule them all](https://eclectic-elf-55163d.netlify.app/)
 
 username: borgoth@mordos.com  
 password: 12bindthem
 
-# How to run
+## How to run
 `git clone` the project locally  
 `npm install` to install all the dependencies  
 `npm start` to run the project in your browser
 
-# Screenshots
+## Screenshots
 
 Login screen
 
@@ -31,7 +34,7 @@ Applications
 
 ![5.png](https://raw.githubusercontent.com/balsa-asanovic/mord-os/master/src/Screenshots/5.png)
 
-# Project requirements
+## Project requirements
 
 You have just received a Slack message from Pete, our salesperson.
 
@@ -77,7 +80,7 @@ The OS could also have a dedicated web browser. Can be simple at first.
 Borgoth isnʼt limiting us on anything here:
 You can enrich the experience as much as you want!
 
-# Components description
+## Components description
 
 [App](https://github.com/balsa-asanovic/mord-os/blob/master/src/App.js) - renders either log in or desktop, depending on if you've already logged in
 
