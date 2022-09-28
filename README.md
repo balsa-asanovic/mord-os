@@ -21,5 +21,5 @@ password: 12bindthem
 
 # Screenshots
 
-[1.png](/src/Screenshots/1.png)
+![1.png](https://raw.githubusercontent.com/balsa-asanovic/mord-os/master/src/Screenshots/1.png)
 
