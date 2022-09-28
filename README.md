@@ -125,6 +125,6 @@ Possibly the next step regarding the file explorer mechanics would be to make hi
 ## Final
 
 This was a very fun project. Had a bit of everything regarding the frontend work.
-It was really cool to experience, to a small degree, those upper echelons of OS programming. :D
+It was really cool to experience, to a small degree, those upper echelons of OS programming. :smile:
 
 
