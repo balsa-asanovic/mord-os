@@ -84,3 +84,29 @@ You can enrich the experience as much as you want!
 [Desktop](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Desktop/Desktop.js) - renders desktop environment with icons, taskbar and windows
 
 [Taskbar](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Taskbar/Taskbar.js) - renders taskbar at the top of the screen, showing time and date on one side and offers log out option on the other
+
+[Icon](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Icon/Icon.js) - renders icons on the desktop, which start applications
+
+[Window](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Window/Window.js) - window component with header which shows title and close button. It contains applications
+
+[Authentication](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Authentication/Authentication.js) - Authentication component for initial log in
+
+Applications components
+
+- [Browser](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Applications/Browser/Browser.js) - renders Browser app in window
+- [Camera](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Applications/Camera/Camera.js) - starts camera stream in window
+- [Files](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Applications/Files/Files.js) - file explorer
+- [Gallery](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Applications/Gallery/Gallery.js) - Gallery app for listing pictures
+- [Notepad](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Applications/Notepad/Notepad.js) - Notepad for taking notes and saving them to file explorer
+- [RSSFeed](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Applications/RssFeed/RssFeed.js) - RSS Feed for showing news
+
+### Context folder
+
+[AuthProvider](https://github.com/balsa-asanovic/mord-os/blob/master/src/context/AuthProvider.js) - Context used for initial log in and for keeping this data across components
+[FileProvider](https://github.com/balsa-asanovic/mord-os/blob/master/src/context/FileProvider.js) - Context for keeping track of files and there creation, deletion and editing
+
+### Hooks folder
+
+[useAuth](https://github.com/balsa-asanovic/mord-os/blob/master/src/hooks/useAuth.js) - custom hook for use of AuthProvider
+
+## Possible updates and different approact
