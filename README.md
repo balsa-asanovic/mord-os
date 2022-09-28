@@ -25,3 +25,18 @@ Login screen
 
 ![1.png](https://raw.githubusercontent.com/balsa-asanovic/mord-os/master/src/Screenshots/1.png)
 
+Desktop
+
+![2.png](https://raw.githubusercontent.com/balsa-asanovic/mord-os/master/src/Screenshots/2.png)
+
+Logout
+
+![3.png](https://raw.githubusercontent.com/balsa-asanovic/mord-os/master/src/Screenshots/3.png)
+
+Icons moving
+
+![4.png](https://raw.githubusercontent.com/balsa-asanovic/mord-os/master/src/Screenshots/4.png)
+
+Applications
+
+![5.png](https://raw.githubusercontent.com/balsa-asanovic/mord-os/master/src/Screenshots/5.png)
