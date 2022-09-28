@@ -113,3 +113,18 @@ Applications components
 [useAuth](https://github.com/balsa-asanovic/mord-os/blob/master/src/hooks/useAuth.js) - custom hook for use of AuthProvider
 
 ## Possible updates and different approact
+
+Styling choices are definitely debatable, so this is something I'd like to improve.
+Also regarding this, I did not particulary work on mobile responsiveness, so this would be a welcome feature.
+At it's current state, it is solely a desktop OS.
+
+Credentials storing is very simple (using browser local storage), this is something I'd definitely change in an environment where I have a proper backend.
+
+Possibly the next step regarding the file explorer mechanics would be to make hierarchies, meaning you could make different folders, which would store different files.
+
+## Final
+
+This was a very fun project. Had a bit of everything regarding the frontend work.
+It was really cool to experience, to a small degree, those upper echelons of OS programming. :D
+
+
