@@ -21,5 +21,5 @@ password: 12bindthem
 
 # Screenshots
 
-[1.png](/src/screenshots/1.png)
+[1.png](/src/Screenshots/1.png)
 
