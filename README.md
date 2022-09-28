@@ -76,3 +76,11 @@ The OS could also have a dedicated web browser. Can be simple at first.
 
 Borgoth isnʼt limiting us on anything here:
 You can enrich the experience as much as you want!
+
+# Components description
+
+[App](https://github.com/balsa-asanovic/mord-os/blob/master/src/App.js) - renders either log in or desktop, depending on if you've already logged in
+
+[Desktop](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Desktop/Desktop.js) - renders desktop environment with icons, taskbar and windows
+
+[Taskbar](https://github.com/balsa-asanovic/mord-os/blob/master/src/components/Taskbar/Taskbar.js) - renders taskbar at the top of the screen, showing time and date on one side and offers log out option on the other
