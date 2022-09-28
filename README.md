@@ -1,6 +1,9 @@
 # Demo 
 [MordOS - One OS to rule them all](https://eclectic-elf-55163d.netlify.app/)
 
+username: borgoth@mordos.com  
+password: 12bindthem
+
 # How to run
 `git clone` the project locally  
 `npm install` to install all the dependencies  
@@ -15,4 +18,8 @@
 
 
 #### Deadline: 7 days
+
+# Screenshots
+
+[![1.png](https://i.postimg.cc/nL299sRs/1.png)](https://postimg.cc/VSSk3Nc1)
 
